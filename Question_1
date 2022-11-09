@@ -1,0 +1,23 @@
+import datetime
+class Employee:
+    def __init__(self,EmployeeID,Gender,Salary,PerformanceRating ):
+        self.EmployeeID=EmployeeID
+        self.Gender=Gender
+        self.Salary=Salary
+        self.PerformanceRating=PerformanceRating
+    def get(self):
+        print('EmployeeID : ',self.EmployeeID)
+        print('Gender : ',self.Gender)
+        print('Salary : ',self.Salary)
+        print('PerformanceRating : ',self.PerformanceRating)
+        
+class JoiningDetail:
+    def __init__(self):
+        self.DateOfJoining=datetime.datetime(2020, 5, 17)
+    def getDoJ(self):
+        print(self.DateOfJoining.strftime("%x"))
+        
+        
+class Information(Employee,JoiningDetail):
+    
+        
